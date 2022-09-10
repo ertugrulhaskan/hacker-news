@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+  body {
+    @apply font-body;
+  }
+
+  h2 {
+    @apply my-4 mx-4 text-lg font-semibold;
+  }
+}
+
+@layer components {
+  a.github:hover svg {
+    fill: #6e5494;
+  }
+  a.twitter:hover svg {
+    fill: #1da1f2;
+  }
+  a.linkedin:hover svg {
+    fill: #0077b5;
+  }
+}
