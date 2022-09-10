@@ -2,9 +2,9 @@ import React from "react";
 
 function SocialMedia() {
   return (
-    <>
+    <div className="rounded-xl bg-gray-100">
       <h2>Follow on social media</h2>
-      <div className="sticky inset-0 flex w-full flex-row justify-center border-t border-zinc-100 bg-white py-4">
+      <div className="flex flex-row justify-center pb-4">
         <div className="h-12">
           <a
             href="https://github.com/ertugrulhaskan"
@@ -53,7 +53,7 @@ function SocialMedia() {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

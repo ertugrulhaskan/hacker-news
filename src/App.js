@@ -16,7 +16,7 @@ function App() {
               <Box />
             </div>
           </section>
-          <section className="w-64">
+          <section className="w-64 pt-5">
             <SocialMedia />
           </section>
         </div>
