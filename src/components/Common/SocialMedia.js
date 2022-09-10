@@ -4,12 +4,12 @@ function SocialMedia() {
   return (
     <div className="rounded-xl bg-gray-100">
       <h2>Follow on social media</h2>
-      <div className="flex flex-row justify-center pb-4">
+      <div className="mx-4 mb-4 flex flex-row">
         <div className="h-12">
           <a
             href="https://github.com/ertugrulhaskan"
             target="_blank"
-            className="github hover:fill[#6e5494]; mr-4 inline-block h-12 w-12"
+            className="github hover:fill[#6e5494]; mr-4 inline-block h-9 w-9"
             rel="noreferrer"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -20,7 +20,7 @@ function SocialMedia() {
           <a
             href="https://codepen.io/ertugrulhaskan/pens/public"
             target="_blank"
-            className="codepen -ring-offset-2 mr-4 inline-block h-[43px] w-[43px] translate-y-[-2px] rounded-full ring-[3px] ring-black hover:fill-green-700 hover:ring-green-700"
+            className="codepen -ring-offset-2 mr-4 inline-block h-[32px] w-[32px] translate-y-[-2px] rounded-full ring-[3px] ring-black hover:fill-green-700 hover:ring-green-700"
             rel="noreferrer"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -32,7 +32,7 @@ function SocialMedia() {
           <a
             href="https://linkedin.com/in/ertugrulhaskan"
             target="_blank"
-            className="linkedin mr-4 inline-block h-12 w-12"
+            className="linkedin mr-4 inline-block h-9 w-9"
             rel="noreferrer"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
@@ -43,7 +43,7 @@ function SocialMedia() {
           <a
             href="https://twitter.com/ertugrulhaskan"
             target="_blank"
-            className="twitter inline-block h-12 w-12"
+            className="twitter inline-block h-9 w-9"
             rel="noreferrer"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
