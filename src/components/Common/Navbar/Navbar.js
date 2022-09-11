@@ -42,6 +42,23 @@ function Navbar() {
           </svg>
         </NavbarItem>
       </div>
+
+      <div className="py-2">
+        <NavbarItem text="Asks">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="#000"
+              fillRule="evenodd"
+              d="M1 4a3 3 0 0 1 3-3h4.5a3 3 0 0 1 3 3v18a1 1 0 0 1-1 1H9a1 1 0 0 1-.832-.445L6.465 20H4a3 3 0 0 1-3-3V4zm3-1a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h3a1 1 0 0 1 .832.445L9.5 20.947V4a1 1 0 0 0-1-1H4zm19 1a3 3 0 0 0-3-3h-4.5a3 3 0 0 0-3 3v18a1 1 0 0 0 1 1H15a1 1 0 0 0 .832-.445L17.535 20H20a3 3 0 0 0 3-3V4zm-3-1a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-3a1 1 0 0 0-.832.445L14.5 20.947V4a1 1 0 0 1 1-1H20z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </NavbarItem>
+      </div>
     </nav>
   );
 }

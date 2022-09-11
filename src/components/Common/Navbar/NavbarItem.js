@@ -4,11 +4,11 @@ function NavbarItem(props) {
   return (
     <a
       href="/"
-      className="inline-block rounded-full py-2 px-4 hover:bg-gray-200"
+      className="inline-block h-10 w-10 rounded-full hover:bg-gray-200 lg:h-auto lg:w-auto lg:py-2 lg:px-4"
     >
-      <div className="flex flex-row items-center ">
-        <div className="mr-3 w-6">{props.children}</div>
-        <div>{props.text}</div>
+      <div className="flex h-full flex-row items-center justify-center">
+        <div className="w-6">{props.children}</div>
+        <div className="ml-3 hidden lg:inline-block">{props.text}</div>
       </div>
     </a>
   );

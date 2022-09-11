@@ -1,23 +1,30 @@
+import { useState } from "react";
 import Box from "./components/Box/Box";
 import Header from "./components/Common/Header";
 import SocialMedia from "./components/Common/SocialMedia";
 
 function App() {
+  const [category, setCategory] = useState("jobstories");
+
   return (
-    <div className="container  mx-auto flex h-screen max-w-6xl flex-row">
-      <div className="min-h-full w-60 shrink-0 pr-5">
+    <div className="relative flex flex-row">
+      <div className="sticky top-0 h-screen w-2/12 shrink-0 lg:w-3/12">
         <Header />
       </div>
-      <main className="grow">
-        <div className="flex min-h-full flex-row items-stretch justify-between">
-          <section className="mr-5 grow border-r border-l border-gray-200">
-            <h2>Latest News</h2>
+      <main className="w-full">
+        <div className="flex h-full w-full max-w-5xl flex-row items-start justify-start">
+          <section className="mr-5 min-h-screen grow items-stretch border-x border-gray-200">
+            <h2>Best Stroies</h2>
             <div className="border-t border-gray-200">
-              <Box type="beststories" />
+              <Box type={category} />
             </div>
           </section>
-          <section className="sticky shrink-0 pt-5">
-            <SocialMedia />
+          <section className="mr-5 hidden h-full w-64 shrink-0 flex-col lg:flex">
+            <div className="sticky top-0">
+              <div className="my-4">
+                <SocialMedia />
+              </div>
+            </div>
           </section>
         </div>
       </main>

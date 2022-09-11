@@ -5,12 +5,12 @@ import ThemeToggle from "./ThemeToggle";
 
 function Header() {
   return (
-    <header className="flex h-full flex-col justify-between pt-5">
-      <div>
+    <header className="flex h-full flex-col items-end justify-between py-4">
+      <div className="w-16 lg:w-52">
         <Logo />
         <Navbar />
       </div>
-      <div className="my-4">
+      <div className="w-16 lg:w-52">
         <ThemeToggle />
       </div>
     </header>
