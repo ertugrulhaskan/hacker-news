@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import BoxDetails from "./BoxDetails";
 
 function Box(props) {
-  const HN_URI = "https://hacker-news.firebaseio.com/v0/";
+  const HN_URL = "https://hacker-news.firebaseio.com/v0";
 
   const [listIDs, setListIDs] = useState([]);
   const [content, setContent] = useState(null);
@@ -9,7 +10,7 @@ function Box(props) {
   useEffect(() => {
     const getListID = () => {
       fetch(
-        `${HN_URI}/${props.type}.json?print=pretty&orderBy="$priority"&limitToFirst=20`
+        `${HN_URL}/${props.type}.json?print=pretty&orderBy="$priority"&limitToFirst=20`
       )
         .then((response) => response.json())
         .then((data) => setListIDs(data));
@@ -19,7 +20,7 @@ function Box(props) {
 
   useEffect(() => {
     let requestList = listIDs.map((id) => {
-      return fetch(`${HN_URI}/item/${id}.json?print=pretty`)
+      return fetch(`${HN_URL}/item/${id}.json?print=pretty`)
         .then((response) => response.json())
         .then((data) => {
           return data;
@@ -43,14 +44,21 @@ function Box(props) {
             key={item.id}
           >
             <div className="font-semibold">{item.title}</div>
-            {/* {item.text && (
-              <div
-                className="max-w-md whitespace-pre-line p-4 font-mono text-xs leading-loose lg:max-w-lg"
-                dangerouslySetInnerHTML={{
-                  __html: `${item.text}`,
-                }}
-              ></div>
-            )} */}
+            {item.text && (
+              <>
+                <div
+                  className="my-2 h-20 overflow-hidden text-clip rounded-lg border border-gray-200 bg-gray-50 p-2 font-mono text-xs leading-loose"
+                  dangerouslySetInnerHTML={{
+                    __html: `${item.text}`,
+                  }}
+                ></div>
+                <BoxDetails
+                  className="hidden"
+                  title={item.title}
+                  text={item.text}
+                />
+              </>
+            )}
           </a>
         ))}
     </div>
