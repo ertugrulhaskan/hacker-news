@@ -4,6 +4,12 @@ module.exports = {
 
   theme: {
     extend: {
+      colors: {
+        primary: {
+          100: "#FB651E",
+          200: "#D9561A",
+        },
+      },
       fontFamily: {
         body: [
           "Poppins",

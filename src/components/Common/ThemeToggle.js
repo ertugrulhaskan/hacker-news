@@ -2,7 +2,7 @@ import React from "react";
 
 function ThemeToggle() {
   return (
-    <button className="flex flex-row items-center rounded-full bg-gray-800 text-white hover:bg-black lg:py-2 lg:pl-2 lg:pr-4">
+    <button className="flex flex-row items-center rounded-full bg-gray-800 text-white transition-all hover:bg-black lg:py-2 lg:pl-2 lg:pr-4">
       <div className="w-8">
         <svg
           xmlns="http://www.w3.org/2000/svg"
