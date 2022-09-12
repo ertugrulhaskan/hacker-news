@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="mt-6 flex flex-col">
       <div className="py-2">
-        <NavbarItem text="Stories" slug="stories">
+        <NavbarItem text="Stories" slug="stories" hnRequest="beststories">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M20.786 24H3.214C1.441 24 0 22.558 0 20.786V3.214C0 1.442 1.441 0 3.214 0h17.572C22.559 0 24 1.442 24 3.214v17.571C24 22.558 22.559 24 20.786 24zM3.214 1.5c-.945 0-1.714.769-1.714 1.714v17.571c0 .945.769 1.714 1.714 1.714h17.572c.945 0 1.714-.769 1.714-1.714V3.214c0-.945-.769-1.714-1.714-1.714H3.214z" />
             <path d="M11.954 13h-.004c-.253-.001-.488-.13-.626-.343l-4.204-6.5c-.224-.347-.125-.812.223-1.037.347-.223.811-.126 1.037.223l3.581 5.537 3.663-5.543c.229-.345.693-.442 1.039-.212.346.228.441.693.213 1.039l-4.296 6.5c-.14.21-.374.336-.626.336z" />
@@ -15,7 +15,7 @@ function Navbar() {
       </div>
 
       <div className="py-2">
-        <NavbarItem text="Jobs" slug="jobs">
+        <NavbarItem text="Jobs" slug="jobs" hnRequest="jobstories">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -44,7 +44,7 @@ function Navbar() {
       </div>
 
       <div className="py-2">
-        <NavbarItem text="Asks" slug="asks">
+        <NavbarItem text="Asks" slug="asks" hnRequest="askstories">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
