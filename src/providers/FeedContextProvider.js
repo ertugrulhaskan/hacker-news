@@ -12,6 +12,7 @@ const FeedContextProvider = (props) => {
   // const [category, setCategory] = useState("topstories");
 
   const getContent = async () => {
+    setFeeds(null);
     setLoading(true);
     // First API call for item IDs
     const response = await fetch(
