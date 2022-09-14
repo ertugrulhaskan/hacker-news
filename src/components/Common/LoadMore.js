@@ -7,7 +7,7 @@ const LoadMore = () => {
     <div className="mt-5 mb-10 flex justify-center">
       <button
         disabled={loading}
-        className="rounded-full border-4 border-primary-100 py-1 px-4 text-xl -tracking-wider text-primary-100 ring-offset-2 transition-all duration-300 ease-out hover:border-primary-200 hover:bg-primary-200 hover:text-white hover:ring-2 hover:ring-primary-200"
+        className="rounded-full border-2 border-primary-100 py-2 px-4 text-lg -tracking-wide text-primary-100 ring-inset ring-offset-2 transition-all duration-300 ease-out hover:border-primary-200 hover:bg-primary-200 hover:text-white hover:ring-2 hover:ring-primary-200"
       >
         {loading ? (
           <div className="flex flex-row items-center pr-2">

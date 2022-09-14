@@ -10,7 +10,7 @@
   }
 
   h2 {
-    @apply p-4 text-lg font-semibold text-primary-100;
+    @apply p-4 text-lg font-semibold;
   }
 }
 

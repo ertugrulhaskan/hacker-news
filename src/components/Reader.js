@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 const Reader = (props) => {
   return (
     <Fragment>
-      <h2 className="flex flex-row items-center justify-between">
+      <h2 className="flex flex-row items-center justify-between text-primary-100">
         TITLE
         {/* {props.filters && (
           <button>
