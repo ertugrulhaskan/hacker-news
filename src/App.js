@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import Box from "./components/Box/Box";
+import Box from "./components/Box";
 import Header from "./components/Common/Header";
-import LoadMore from "./components/Common/LoadMore";
+import LoadMore from "./components/Common/Loading";
 import SocialMedia from "./components/Common/SocialMedia";
 import Reader from "./components/Reader";
 import { FeedContext } from "./providers/FeedContextProvider";

@@ -4,10 +4,11 @@ export const FeedContext = createContext();
 
 const FeedContextProvider = (props) => {
   const HN_URL = "https://hacker-news.firebaseio.com/v0";
-
   const [loading, setLoading] = useState(false);
   const [feeds, setFeeds] = useState(null);
-  const [query, setQuery] = useState("newstories");
+
+  const [query, setQuery] = useState("jobstories");
+  // const [limit, setLimit] = useState("5");
   // newstories, jobstories, askstories, showstories, topstories, beststories,
   // const [category, setCategory] = useState("topstories");
 
@@ -16,7 +17,8 @@ const FeedContextProvider = (props) => {
     setLoading(true);
     // First API call for item IDs
     const response = await fetch(
-      `${HN_URL}/${query}.json?print=pretty&orderBy="$priority"&limitToFirst=10`
+      `${HN_URL}/${query}.json?print=pretty&orderBy="$priority"`
+      // `${HN_URL}/${query}.json?print=pretty&orderBy="$priority"&limitToFirst=10`
     );
     const feedsIDList = await response.json();
 
