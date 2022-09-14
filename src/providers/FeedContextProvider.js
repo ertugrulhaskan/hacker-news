@@ -7,14 +7,14 @@ const FeedContextProvider = (props) => {
 
   const [loading, setLoading] = useState(false);
   const [feeds, setFeeds] = useState(null);
-  // topstories, beststories, newstories, jobstories, showstories, askstories
+  // newstories, jobstories, askstories, showstories, topstories, beststories,
   // const [category, setCategory] = useState("topstories");
 
   const getContent = async () => {
     setLoading(true);
     // First API call for item IDs
     const response = await fetch(
-      `${HN_URL}/topstories.json?print=pretty&orderBy="$priority"&limitToFirst=10`
+      `${HN_URL}/askstories.json?print=pretty&orderBy="$priority"&limitToFirst=10`
     );
     const feedsIDList = await response.json();
 

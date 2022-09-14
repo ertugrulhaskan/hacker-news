@@ -6,11 +6,11 @@
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
   body {
-    @apply font-body text-gray-800 dark:bg-gray-900 dark:text-gray-50;
+    @apply bg-orange-50 font-body text-gray-800 dark:bg-gray-900 dark:text-orange-50;
   }
 
   h2 {
-    @apply p-4 text-lg font-semibold;
+    @apply p-4 text-lg font-semibold text-primary-100;
   }
 }
 

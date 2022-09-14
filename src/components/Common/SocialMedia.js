@@ -2,7 +2,7 @@ import React from "react";
 
 const SocialMedia = () => {
   return (
-    <div className="inline-block rounded-xl bg-gray-100">
+    <div className="inline-block rounded-xl bg-orange-200 bg-opacity-30">
       <h2 className="hidden xl:block">Follow on social media</h2>
       <div className="flex flex-col items-center justify-center p-2 xl:mb-4 xl:flex-row xl:items-start xl:p-0">
         <a

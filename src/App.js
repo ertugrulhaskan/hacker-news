@@ -15,7 +15,7 @@ const App = () => {
       </div>
       <main className="relative w-full">
         <div className="flex h-full w-full max-w-5xl flex-row items-start justify-start">
-          <section className="mr-5 min-h-screen grow items-stretch overflow-hidden border-x border-gray-200 dark:border-gray-800">
+          <section className="mr-5 min-h-screen grow items-stretch overflow-hidden border-x border-orange-100 dark:border-gray-800">
             <Reader>
               {feeds && feeds.map((feed) => <Box feed={feed} key={feed.id} />)}
               <LoadMore />
