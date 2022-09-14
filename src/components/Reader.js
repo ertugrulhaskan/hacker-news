@@ -11,7 +11,9 @@ const Reader = (props) => {
           </button>
         )} */}
       </h2>
-      <div className="border-t border-gray-200">{props.children}</div>
+      <div className="border-t border-gray-200 dark:border-gray-800">
+        {props.children}
+      </div>
     </Fragment>
   );
 };

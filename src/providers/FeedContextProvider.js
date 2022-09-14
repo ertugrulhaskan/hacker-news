@@ -26,6 +26,7 @@ const FeedContextProvider = (props) => {
     });
     // Waiting until end of the all promises
     Promise.all(promises).then((data) => {
+      console.log(data);
       setFeeds(data);
       setLoading(false);
     });
