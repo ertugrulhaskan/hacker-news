@@ -5,14 +5,16 @@ export const FeedContext = createContext();
 const FeedContextProvider = (props) => {
   const HN_URL = "https://hacker-news.firebaseio.com/v0";
 
+  const [loading, setLoading] = useState(false);
   const [feeds, setFeeds] = useState(null);
   // topstories, beststories, newstories, jobstories, showstories, askstories
   // const [category, setCategory] = useState("topstories");
 
   const getContent = async () => {
+    setLoading(true);
     // First API call for item IDs
     const response = await fetch(
-      `${HN_URL}/topstories.json?print=pretty&orderBy="$priority"&limitToFirst=5`
+      `${HN_URL}/topstories.json?print=pretty&orderBy="$priority"&limitToFirst=10`
     );
     const feedsIDList = await response.json();
 
@@ -25,6 +27,7 @@ const FeedContextProvider = (props) => {
     // Waiting until end of the all promises
     Promise.all(promises).then((data) => {
       setFeeds(data);
+      setLoading(false);
     });
   };
 
@@ -33,7 +36,7 @@ const FeedContextProvider = (props) => {
   }, []);
 
   return (
-    <FeedContext.Provider value={{ feeds }}>
+    <FeedContext.Provider value={{ feeds, loading }}>
       {props.children}
     </FeedContext.Provider>
   );

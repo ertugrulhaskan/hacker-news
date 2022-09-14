@@ -6,9 +6,9 @@ import FeedContextProvider from "./providers/FeedContextProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  // <React.StrictMode>
-  <FeedContextProvider>
-    <App />
-  </FeedContextProvider>
-  // </React.StrictMode>
+  <React.StrictMode>
+    <FeedContextProvider>
+      <App />
+    </FeedContextProvider>
+  </React.StrictMode>
 );
