@@ -1,6 +1,6 @@
 import React from "react";
 
-function SocialMedia() {
+const SocialMedia = () => {
   return (
     <div className="inline-block rounded-xl bg-gray-100">
       <h2 className="hidden xl:block">Follow on social media</h2>
@@ -53,6 +53,6 @@ function SocialMedia() {
       </div>
     </div>
   );
-}
+};
 
 export default SocialMedia;

@@ -1,11 +1,10 @@
 import React, { Fragment } from "react";
-// import { HiOutlineSparkles } from "react-icons/hi";
 
-function Reader(props) {
+const Reader = (props) => {
   return (
     <Fragment>
       <h2 className="flex flex-row items-center justify-between">
-        {props.title}
+        TITLE
         {/* {props.filters && (
           <button>
             <HiOutlineSparkles />
@@ -15,6 +14,6 @@ function Reader(props) {
       <div className="border-t border-gray-200">{props.children}</div>
     </Fragment>
   );
-}
+};
 
 export default Reader;

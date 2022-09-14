@@ -1,6 +1,6 @@
 import React from "react";
 
-function Logo() {
+const Logo = () => {
   return (
     <h1 className="flex items-center">
       <a href="/" className="block w-12">
@@ -18,6 +18,6 @@ function Logo() {
       </a>
     </h1>
   );
-}
+};
 
 export default Logo;

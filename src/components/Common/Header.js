@@ -3,7 +3,7 @@ import Logo from "./Logo";
 import Navbar from "./Navbar/Navbar";
 import ThemeToggle from "./ThemeToggle";
 
-function Header() {
+const Header = () => {
   return (
     <header className="flex h-full flex-col items-end justify-between py-4">
       <div className="w-16 lg:w-52">
@@ -15,6 +15,6 @@ function Header() {
       </div>
     </header>
   );
-}
+};
 
 export default Header;

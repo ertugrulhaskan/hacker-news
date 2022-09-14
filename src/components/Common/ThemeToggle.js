@@ -1,6 +1,6 @@
 import React from "react";
 
-function ThemeToggle() {
+const ThemeToggle = () => {
   return (
     <button className="flex flex-row items-center rounded-full bg-gray-800 text-white transition-all hover:bg-black lg:py-2 lg:pl-2 lg:pr-4">
       <div className="w-8">
@@ -16,6 +16,6 @@ function ThemeToggle() {
       <div className="ml-1 hidden lg:inline-block">Dark Mode</div>
     </button>
   );
-}
+};
 
 export default ThemeToggle;
