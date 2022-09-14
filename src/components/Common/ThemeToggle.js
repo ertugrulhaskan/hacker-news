@@ -8,8 +8,8 @@ const ThemeToggle = () => {
       onClick={changeTheme}
       className={`flex flex-row items-center rounded-full transition-all duration-300 lg:py-2 lg:pl-2 lg:pr-4 ${
         theme === "light"
-          ? "bg-gray-700 text-white hover:bg-gray-900"
-          : "bg-gray-200 text-gray-700 hover:bg-white"
+          ? "bg-stone-700 text-white hover:bg-stone-900"
+          : "bg-stone-200 text-stone-700 hover:bg-white"
       }`}
     >
       <div className="w-8">
