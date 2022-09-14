@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="mt-6 flex flex-col">
       <div className="py-2">
-        <NavbarItem text="Stories">
+        <NavbarItem text="Stories" query="newstories">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
               className="fill-gray-700 dark:fill-orange-50"
@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
 
       <div className="py-2">
-        <NavbarItem text="Jobs">
+        <NavbarItem text="Jobs" query="jobstories">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -53,7 +53,7 @@ const Navbar = () => {
       </div>
 
       <div className="py-2">
-        <NavbarItem text="Asks">
+        <NavbarItem text="Asks" query="askstories">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

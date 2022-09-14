@@ -7,6 +7,7 @@ const FeedContextProvider = (props) => {
 
   const [loading, setLoading] = useState(false);
   const [feeds, setFeeds] = useState(null);
+  const [query, setQuery] = useState("newstories");
   // newstories, jobstories, askstories, showstories, topstories, beststories,
   // const [category, setCategory] = useState("topstories");
 
@@ -14,7 +15,7 @@ const FeedContextProvider = (props) => {
     setLoading(true);
     // First API call for item IDs
     const response = await fetch(
-      `${HN_URL}/askstories.json?print=pretty&orderBy="$priority"&limitToFirst=10`
+      `${HN_URL}/${query}.json?print=pretty&orderBy="$priority"&limitToFirst=10`
     );
     const feedsIDList = await response.json();
 
@@ -34,10 +35,14 @@ const FeedContextProvider = (props) => {
 
   useEffect(() => {
     getContent();
-  }, []);
+  }, [query]);
+
+  const handleQuery = (query) => {
+    setQuery(query);
+  };
 
   return (
-    <FeedContext.Provider value={{ feeds, loading }}>
+    <FeedContext.Provider value={{ feeds, loading, handleQuery }}>
       {props.children}
     </FeedContext.Provider>
   );
