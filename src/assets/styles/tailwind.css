@@ -6,7 +6,7 @@
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
   body {
-    @apply font-body;
+    @apply font-body dark:bg-gray-900;
   }
 
   h2 {
