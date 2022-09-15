@@ -1,5 +1,5 @@
 
-# TODO List App
+# Hacker News Reader
 
 Working with React Hooks. Creating a clone Twitter interface and using Hacker News API.
 
